@@ -29,17 +29,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_idp.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    libc29.vendor
-
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    libhidlbase-v32.vendor
 
 # Init scripts
 PRODUCT_COPY_FILES += \
@@ -74,14 +66,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Power
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# RIL
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat
-
-# Sensor
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
