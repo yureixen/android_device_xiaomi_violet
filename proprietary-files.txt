@@ -254,7 +254,7 @@ vendor/lib64/mibokeh_660_opencl.bin
 vendor/firmware/CAMERA_ICP.elf
 
 # Consumer IR
--vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so;FIX_SONAME
 
 # DRM Widevine L1
 -vendor/lib64/liboemcrypto.so
