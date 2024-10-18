@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2023 The LineageOS Project
+# Copyright (C) 2018-2024 The LineageOS Project
 # Copyright (C) 2020 The PixelExperience Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -23,8 +23,7 @@ PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="violet-user 10 QKQ1.190915.002 V12.5.1.0.QFHINXM release-keys" \
-    PRODUCT_NAME="violet"
+    BuildDesc="violet-user 10 QKQ1.190915.002 V12.5.1.0.QFHINXM release-keys" \
+    BuildFingerprint="xiaomi/violet/violet:10/QKQ1.190915.002/V12.5.1.0.QFHINXM:user/release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/violet/violet:10/QKQ1.190915.002/V12.5.1.0.QFHINXM:user/release-keys"
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
