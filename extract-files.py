@@ -26,10 +26,7 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    (
-        'vendor/lib64/hw/camera.qcom.so',
-        'vendor/lib64/libvidhance.so',
-    ): blob_fixup()
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10080', '0')
@@ -42,6 +39,9 @@ blob_fixups: blob_fixups_user_type = {
         .patchelf_version('0_8')
         .remove_needed('libhidlbase.so')
         .binary_regex_replace(b'libhidltransport.so', b'libhidlbase-v32.so\x00'),
+    'vendor/lib64/libvidhance.so': blob_fixup()
+        .add_needed('libcomparetf2_shim.so')
+        .add_needed('libdemangle.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
