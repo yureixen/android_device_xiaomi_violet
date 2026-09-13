@@ -8,9 +8,6 @@
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
-
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 28
 
@@ -73,3 +70,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Wifi
 PRODUCT_PACKAGES += \
     VioletWifiOverlay
+
+# Call the proprietary setup
+$(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
