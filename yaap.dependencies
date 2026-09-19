@@ -1,6 +1,27 @@
 [
   {
-    "repository": "android_device_xiaomi_sm6150-common",
-    "target_path": "device/xiaomi/sm6150-common"
+    "repository": "LineageOS/android_device_xiaomi_sm6150-common",
+    "target_path": "device/xiaomi/sm6150-common",
+    "branch": "lineage-22.2"
+  },
+  {
+    "repository": "yureixen/proprietary_vendor_xiaomi_violet",
+    "target_path": "vendor/xiaomi/violet",
+    "branch": "lineage-22"
+  },
+  {
+    "repository": "TheMuppets/proprietary_vendor_xiaomi_sm6150-common",
+    "target_path": "vendor/xiaomi/sm6150-common",
+    "branch": "lineage-22.2"
+  },
+  {
+    "repository": "LineageOS/android_kernel_xiaomi_sm6150",
+    "target_path": "kernel/xiaomi/sm6150",
+    "branch": "lineage-22.2"
+  },
+  {
+    "repository": "yaap/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "fifteen"
   }
 ]
