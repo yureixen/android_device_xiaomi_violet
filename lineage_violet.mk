@@ -17,7 +17,6 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := false
-WITH_GMS := true
 TARGET_USES_MINI_GAPPS := true
 TARGET_INCLUDE_ACCORD := false
 
