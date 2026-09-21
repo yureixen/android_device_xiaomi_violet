@@ -24,9 +24,7 @@
     "branch": "lineage-23.2"
   },
   {
-    "repository": "Evolution-X-Devices/hardware_xiaomi",
-    "target_path": "hardware/xiaomi",
-    "remote": "github-non-los",
-    "branch": "bka"
+    "repository": "hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
   }
 ]
