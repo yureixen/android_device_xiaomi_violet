@@ -5,11 +5,17 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Dolby
+TARGET_USES_DOLBY := true
+
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 28
