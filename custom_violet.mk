@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := custom_violet
 PRODUCT_DEVICE := violet
