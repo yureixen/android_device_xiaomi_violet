@@ -74,6 +74,3 @@ PRODUCT_SOONG_NAMESPACES += \
 # Wifi
 PRODUCT_PACKAGES += \
     VioletWifiOverlay
-
-# ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
