@@ -74,3 +74,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Wifi
 PRODUCT_PACKAGES += \
     VioletWifiOverlay
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
