@@ -16,7 +16,9 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := false
-TARGET_USES_MINI_GAPPS := true
+WITH_GMS := false
+# TARGET_USES_MINI_GAPPS := true
+TARGET_INCLUDE_VIPERFX := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
