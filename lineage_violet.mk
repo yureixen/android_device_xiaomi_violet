@@ -20,7 +20,7 @@ WITH_GMS := false
 # TARGET_USES_MINI_GAPPS := true
 
 # Inherit MiuiCamera
-$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
