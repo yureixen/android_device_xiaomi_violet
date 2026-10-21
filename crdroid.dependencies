@@ -2,7 +2,7 @@
   {
     "repository": "yureixen/android_device_xiaomi_sm6150-common",
     "target_path": "device/xiaomi/sm6150-common",
-    "branch": "crdroid-11"
+    "branch": "dolby-15"
   },
   {
     "repository": "yureixen/proprietary_vendor_xiaomi_violet",
