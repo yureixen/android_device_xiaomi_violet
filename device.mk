@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Dolby
+TARGET_USES_DOLBY := true
+
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
@@ -70,6 +73,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Wifi
 PRODUCT_PACKAGES += \
     VioletWifiOverlay
+
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
