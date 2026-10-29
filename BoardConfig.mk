@@ -56,5 +56,8 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Build flags
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/violet/BoardConfigVendor.mk
