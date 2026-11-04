@@ -5,9 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Dolby
-TARGET_USES_DOLBY := true
-
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
@@ -76,6 +73,9 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
+
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
