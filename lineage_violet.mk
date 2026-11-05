@@ -16,10 +16,12 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Lunaris AOSP stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := false
-WITH_GMS := false
 TARGET_USE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_SUPPORTS_QUICK_TAP := false
+USE_ADVANCED_DISPLAY_COLOR := true
+USE_REALITY_ENGINE := true
+SURFACE_FLINGER_BOOST := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
