@@ -24,6 +24,8 @@ TARGET_OPTIMIZED_DEXOPT := true
 USE_ADVANCED_DISPLAY_COLOR := true
 USE_REALITY_ENGINE := true
 SURFACE_FLINGER_BOOST := true
+TARGET_CALL_RECORDING_SUPPORTED := true
+WITH_BCR := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
