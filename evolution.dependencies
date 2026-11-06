@@ -3,13 +3,13 @@
     "repository": "yureixen/android_device_xiaomi_sm6150-common",
     "target_path": "device/xiaomi/sm6150-common",
     "remote": "github-non-los",
-    "branch": "dolby-16"
+    "branch": "sixteen"
   },
   {
     "repository": "yureixen/proprietary_vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
     "remote": "github-non-los",
-    "branch": "lineage-23"
+    "branch": "sixteen"
   },
   {
     "repository": "TheMuppets/proprietary_vendor_xiaomi_sm6150-common",
