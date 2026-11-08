@@ -32,13 +32,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('0x10080', '0')
         .regex_replace('0x1F', '0'),
     'vendor/lib64/camera/components/com.vidhance.node.eis.so': blob_fixup()
-        .add_needed('libdemangle.so')
-        .add_needed('libcomparetf2_shim.so')
         .replace_needed('libui.so', 'libui-v34.so'),
-    'vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so': blob_fixup()
-        .add_needed('libcomparetf2_shim.so'),
-    'vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so': blob_fixup()
-        .binary_regex_replace(b'\xdb\x0a\x00\xb4', b'\x56\x00\x00\x14'),
     'vendor/lib64/libVDSuperPhotoAPI.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
