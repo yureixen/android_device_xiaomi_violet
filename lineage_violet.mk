@@ -16,9 +16,8 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common Lunaris AOSP stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_ENABLE_BLUR := false
-# TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_DISABLE_MATLOG := true
 TARGET_OPTIMIZED_DEXOPT := true
 USE_ADVANCED_DISPLAY_COLOR := true
 USE_REALITY_ENGINE := true
