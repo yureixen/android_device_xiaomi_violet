@@ -77,6 +77,3 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
-
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
