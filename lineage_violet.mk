@@ -24,6 +24,9 @@ USE_REALITY_ENGINE := true
 SURFACE_FLINGER_BOOST := true
 WITH_BCR := true
 
+# Inherit MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
