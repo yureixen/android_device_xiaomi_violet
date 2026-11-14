@@ -17,12 +17,15 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 TARGET_SCREEN_WIDTH := 1080
 
+# Inherit MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := custom_violet
 PRODUCT_DEVICE := violet
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="violet-user 10 QKQ1.190915.002 V12.5.1.0.QFHINXM release-keys" \
