@@ -9,7 +9,7 @@
     "repository": "yureixen/proprietary_vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi/violet",
     "remote": "github-non-los",
-    "branch": "sixteen"
+    "branch": "lineage-23"
   },
   {
     "repository": "TheMuppets/proprietary_vendor_xiaomi_sm6150-common",
