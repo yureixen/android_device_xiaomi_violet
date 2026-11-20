@@ -25,12 +25,6 @@
     "branch": "sixteen-qpr2"
   },
   {
-    "remote": "gitlab",
-    "repository": "Joker-V2/android_vendor_MiuiCamera",
-    "target_path": "vendor/MiuiCamera",
-    "branch": "sixteen"
-  },
-  {
     "repository": "Evolution-X-Devices/hardware_dolby",
     "target_path": "hardware/dolby",
     "branch": "bka"
